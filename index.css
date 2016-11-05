@@ -1,14 +1,55 @@
+@font-face {
+    font-family: 'quattrocento';
+    src: url('font/quattrocento/Quattrocento-Regular.ttf');
+}
+font-face {
+    font-family: 'quattrocento-bold';
+    src: url('font/quattrocento/Quattrocento-Bold.ttf');
+}
+@font-face {
+    font-family: 'quattrocento-sans';
+    src: url('font/quattrocentosans/QuattrocentoSans-Regular.ttf');
+}
+
 .center{
     max-width: 600px;
-    margin: 0 auto;
-    padding: 50px;
-    border: solid blue 10px;
+    margin: 50 auto;
+    padding: 25 25 50 25;
+    /*border: solid blue 10px;
       -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
-              box-sizing: border-box;
+              box-sizing: border-box;*/
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(204,199,183,0.75);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(204,199,183,0.75);
+    box-shadow: 1px 1px 10px 0px rgba(204,199,183,0.75);
     position: static;
 
+    font-family: quattrocento-sans;
+    font-size: .95em
+
+}
+.center h1{
+  font-family: quattrocento;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.top-icon{
+  float:left;
+  margin: -5px 70px 10px 0px;
+  font-weight:bold;
+  font-size: 1.5em;
+  font-family: quattrocento-bold;
+}
+.nav{
+  margin: 10 10;
 }
 .nav li{
-  display: inline; margin: 0 10px;
+  display: inline;
+  margin: 0 10;
+}
+
+.nav a{
+  text-decoration: none;
+  font-family: quattrocento;
 }
