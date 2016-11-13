@@ -1,43 +1,33 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head>
-    <body>
-        <div class="top-icon"><a href="index.html"> amy. </a></div>
-        <div class = "nav">
-            <ul>
-              <li><a href="about.html"> about </a></li>
-              <li><a href="projects.html"> projects </a></li>
-              <li><a href="http://paperstains.tumblr.com"> illustrations </a></li>
-              <li><a href="https://github.com/paperstains"> github </a></li>
-              <li><a href="contact.html"> contact </a></li>
-            </ul>
-        </div>
-        <div class = "center">
-          <h1>hi there.</h1>
-            <p>My name is Amy Luo. This is really just meant to be a portal page. For now. I'll fix it up later.
-
-            <br/><br/><strong>Current Interest:</strong> AngularJS</p>
-
-        </div>
-    </body>
-
-</html>
-
 <!--
-Notes:
-- Why do people want to come to your page:
-  To learn more about me
-    - History (personal)
-    - What am I doing now (personal)
-      + Where am I now?
-
-  To learn more about my work
-    - What did I do before
-    - What am I doing now
-      + What projects am I doing?
-  To learn how to contact me
-
-
-
+TODO:
+- make it so that I can google myself using this site
+- get a domain name!
 -->
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>STUFF</title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <header>
+        <nav class="navbar">
+          <div class="top-icon"><a href="#/"> amy. </a></div>
+          <div class = "nav">
+              <ul>
+                <li><a href="#about"> about </a></li>
+                <li><a href="#projects"> projects </a></li>
+                <li><a href="http://paperstains.tumblr.com"> illustrations </a></li>
+                <li><a href="https://github.com/paperstains"> github </a></li>
+                <li><a href="#contact"> contact </a></li>
+              </ul>
+          </div>
+        </nav>
+    </header>
+    <div ng-view></div>
+  </body>
+</html>
