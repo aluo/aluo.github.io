@@ -13,7 +13,7 @@
 
 .center{
     max-width: 800px;
-    margin: 50 auto;
+    margin: 50px auto;
 
     /*border: solid blue 10px;
       -webkit-box-sizing: border-box;
@@ -34,10 +34,10 @@
   background-color: #aaa;
   font-size: 2em;
   margin-bottom: 10px;
-  padding: 10 5 0 10;
+  padding: 10px 5px 0px 10px;
 }
 .center p{
-  padding: 0 50 50 50;
+  padding: 0px 50px 50px 50px;
 }
 
 .center strong{
@@ -52,11 +52,11 @@
   font-family: quattrocento-bold;
 }
 .nav{
-  margin: 10 10;
+  margin: 10px 10px;
 }
 .nav li{
   display: inline;
-  margin: 0 10;
+  margin: 0px 10px;
 }
 
 a{
