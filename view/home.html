@@ -1,4 +1,11 @@
 <div class="center">
   <h1>{{headline}}</h1>
   <p ng-bind-html="content"></p>
+  <div class="icon-wrapper">
+    <div class="icon img-{{icon.name}}" ng-repeat="icon in icons">
+      <a href={{icon.link}}>
+        <div class="overlay center-text"><div class="hide">{{icon.name}}</div></div>
+      </a>
+    </div>
+  </div>
 </div>

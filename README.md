@@ -1,2 +1,2 @@
-# paperstains.github.io
+# aluo.github.io
 Personal website

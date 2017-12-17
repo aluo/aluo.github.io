@@ -23,7 +23,7 @@ app.config(function($routeProvider){
 app.controller('mainCtrl', function($scope){
   $scope.headline = "hi there.";
   $scope.content = "My name is Amy Luo. This is really just meant to be a portal page. For now. I'll fix it up later. <br/><br/><strong>Current Interest:</strong> AngularJS";
-
+  $scope.icons = icon_obj;
 });
 
 app.controller('aboutCtrl', function($scope){
@@ -33,7 +33,7 @@ app.controller('aboutCtrl', function($scope){
 
 app.controller('contactCtrl', function($scope){
   $scope.headline = "contact";
-  $scope.content = "resume:</br>email:</br>linkedin:</br>";
+  $scope.content = "resume:</br>email:</br>linkedin: <a href='https://www.linkedin.com/in/luoamy'>(+)</a></br>";
 
 });
 app.controller('projectCtrl', function($scope){
@@ -41,3 +41,16 @@ app.controller('projectCtrl', function($scope){
   $scope.content = "This is more of a to-do list for now.<br/><br/>- remake website with angular (done)";
 
 });
+
+var icon_obj = [
+  {
+    name: "illustration",
+    img: "img/illusLogo.png",
+    link: "http://paperstains.tumblr.com"
+  },
+  {
+    name: "github",
+    img: "img/githubMark.png",
+    link: "https://github.com/paperstains"
+  }
+]
