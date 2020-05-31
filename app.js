@@ -14,13 +14,18 @@ app.controller('mainCtrl', function($scope){
 
 const icon_obj = [
   {
+    name: "github",
+    img: "img/githubLogo.png",
+    link: "https://github.com/aluo"
+  },
+  {
     name: "illustration",
     img: "img/illusLogo.png",
     link: "http://paperstains.tumblr.com"
   },
   {
-    name: "github",
-    img: "img/githubMark.png",
-    link: "https://github.com/aluo"
+    name: "linkedin",
+    img: "img/linkedInLogo.png",
+    link: "https://www.linkedin.com/in/luoamy"
   }
 ]

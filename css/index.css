@@ -15,14 +15,16 @@ header {
   margin-top: 5em;
 }
 
-.center{
-  margin: 50px auto;
-
+.content{
   position: static;
   overflow: auto;
 
   font-family: quattrocento-sans;
   font-size: .95em
+}
+
+.center{
+  margin: 0 auto;
 }
 
 .text-center{
@@ -41,30 +43,32 @@ a, a:visited, a:link, a:active, a:hover{
 
 /* Circle Icons */
 .icon-wrapper{
-  margin: 0 auto;
+  display: inline-block;
   padding: 2em 0;
-  width: 220px;
 }
 .icon{
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   background-color: #FFF;
-  background-size: 100px 100px;
+  background-size: 75px 75px;
   border-radius: 50%;
   margin: 0px 5px;
   float: left;
 }
 .img-github{
-  background-image: url('../img/githubMark.png');
+  background-image: url('../img/githubLogo.png');
 }
 .img-illustration{
   background-image: url('../img/illusLogo.png');
 }
+.img-linkedin{
+  background-image: url('../img/linkedInLogo.png');
+}
 
 /* hover overlay behavior */
 .icon:hover .overlay{
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   background-color: #000;
   opacity: 0.5;
@@ -73,7 +77,7 @@ a, a:visited, a:link, a:active, a:hover{
 .icon:hover .center-text{
   text-align:center;
   vertical-align:center;
-  line-height: 100px;
+  line-height: 75px;
   color: #fff;
   user-select: none;
 }
