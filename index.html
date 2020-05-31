@@ -1,32 +1,25 @@
 <!--
-TODO:
-- make it so that I can google myself using this site
-- get a domain name!
+  hey! nothing to see here.
+  todo:
+  - update out of angular 1.x
 -->
 <!doctype html>
 <html ng-app="app">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>amy luo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>amy</title>
   </head>
   <body>
-    <header>
-        <nav class="navbar">
-          <div class="top-icon"><a href="#/"> amy. </a></div>
-          <div class = "nav">
-              <ul>
-                <li><a href="#about"> about </a></li>
-                <li><a href="#projects"> projects </a></li>
-                <li><a href="http://paperstains.tumblr.com"> illustrations </a></li>
-                <li><a href="https://github.com/aluo"> github </a></li>
-                <li><a href="#contact"> contact </a></li>
-              </ul>
-          </div>
-        </nav>
+    <header class="text-center">
+      <h1><a href="#/"> amy luo. </a></h1>
+      <p>
+        software developer. illustrator. enthusiest of things.
+      </p>
     </header>
     <div ng-view></div>
   </body>
