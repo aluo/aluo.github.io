@@ -51,6 +51,6 @@ var icon_obj = [
   {
     name: "github",
     img: "img/githubMark.png",
-    link: "https://github.com/paperstains"
+    link: "https://github.com/aluo"
   }
 ]

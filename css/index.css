@@ -1,3 +1,4 @@
+/* font */
 @font-face {
     font-family: 'quattrocento';
     src: url('../font/quattrocento/Quattrocento-Regular.ttf');
@@ -14,6 +15,7 @@
 .center{
     max-width: 800px;
     margin: 50px auto;
+    padding: 0px 0px 30px 0px;
 
     /*border: solid blue 10px;
       -webkit-box-sizing: border-box;
@@ -23,6 +25,7 @@
     -moz-box-shadow: 1px 1px 10px 0px rgba(204,199,183,0.75);
     box-shadow: 1px 1px 10px 0px rgba(204,199,183,0.75);
     position: static;
+    overflow: auto;
 
     font-family: quattrocento-sans;
     font-size: .95em
@@ -31,14 +34,15 @@
 .center h1{
   font-family: quattrocento;
   color: #fff;
-  background-color: #aaa;
+  background-color: #999;
   font-size: 2em;
+  margin-top: 0px;
   margin-bottom: 10px;
   padding: 10px 5px 0px 10px;
 }
-.center p{
+/*.center p{
   padding: 0px 50px 50px 50px;
-}
+}*/
 
 .center strong{
   font-family: quattrocento-bold;
@@ -58,8 +62,56 @@
   display: inline;
   margin: 0px 10px;
 }
+.nav a, .nav a:visited, .nav a:link{
+  color: #999;
+}
 
-a{
+a, a:visited, a:link, a:active, a:hover{
   text-decoration: none;
+  color: #000;
   font-family: quattrocento;
+}
+
+/* Circle Icons */
+.icon-wrapper{
+  margin: 0 auto;
+  width: 220px;
+}
+.icon{
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  float: left;
+}
+.img-github{
+  background-image: url('../img/githubMark.png');
+}
+.img-illustration{
+  background-image: url('../img/illusLogo.png');
+}
+
+
+/* hover overlay behavior */
+.icon:hover .overlay{
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.icon:hover .center-text{
+  text-align:center;
+  vertical-align:center;
+  line-height: 100px;
+  color: #fff;
+}
+
+/* hover text behavior */
+.hide{
+  visibility:hidden;
+}
+.icon:hover .hide{
+  visibility: visible;
 }
